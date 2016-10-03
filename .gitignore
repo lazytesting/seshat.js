@@ -1,0 +1,10 @@
+#IDE
+.idea
+
+#NPM
+npm-debug.log
+node_modules
+
+#other
+coverage
+
