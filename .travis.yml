@@ -6,7 +6,7 @@ install:
     - npm i mocha -g
     - npm i recursive-install -g
 
-before-script:
+before_script:
     - recursive-install
 script: 
     - "mocha **/*spec*.js"
