@@ -1,0 +1,12 @@
+language: node_js
+node_js:
+  - "6"
+  
+install:
+    - npm i mocha -g
+    - npm i recursive-install -g
+
+before-script:
+    - recursive-install
+script: 
+    - mocha **\*spec*.js
