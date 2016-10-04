@@ -9,4 +9,4 @@ install:
 before-script:
     - recursive-install
 script: 
-    - mocha **\*spec*.js
+    - "mocha **/*spec*.js"
