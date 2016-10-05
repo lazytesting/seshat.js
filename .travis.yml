@@ -7,6 +7,11 @@ install:
     - npm i recursive-install -g
 
 before_script:
-    - recursive-install
+    - DIRS=$(find . -maxdepth 3 -name "package.json" -printf "%h\n");
+      for d in $DIRS
+      do
+      ( cd $d && NPM i )
+      done
+
 script: 
     - "mocha **/*spec*.js"
