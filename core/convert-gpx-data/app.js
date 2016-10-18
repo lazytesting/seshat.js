@@ -2,17 +2,11 @@ const fs = require('fs');
 const xml2js = require('xml2js');
 
 module.exports = {
-    Get : function(path)
+    Get : function(gpxData)
     {
-        var xml = getFile(path);
-        var json = xml2JSON(xml);
+         var json = xml2JSON(gpxData);
         return getDataPoints(json);
     }
-}
-
-var getFile = function(path) {
-    var xml = fs.readFileSync(path, 'utf8')
-    return xml;
 }
 
 var xml2JSON = function (xml){

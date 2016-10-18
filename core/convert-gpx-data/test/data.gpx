@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<gpx creator="Ski Tracks - Android (60)" version="1.1"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.topografix.com/GPX/1/1" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+<metadata>
+<link href="http://www.corecoders.com">
+<text>Core Coders Ltd</text>
+</link>
+<time>2016-07-26T13:08:10.518+02:00</time>
+<bounds maxlat="47.012382" maxlon="10.319155" minlat="46.974897" minlon="10.293443" />
+</metadata>
+<trk>
+<name>Some test data</name>
+<trkseg>
+<trkpt lat="46.974974" lon="10.311162">
+<ele>2182.0</ele>
+<time>2015-01-11T15:10:11.000+01:00</time></trkpt>
+<trkpt lat="46.97495" lon="10.311144">
+<ele>2185.0</ele>
+<time>2015-01-11T15:10:12.000+01:00</time></trkpt>
+</trkseg>
+</trk>
+</gpx>
