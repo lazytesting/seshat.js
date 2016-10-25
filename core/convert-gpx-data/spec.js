@@ -18,7 +18,8 @@ describe('Convert GPX data', () => {
                 lat: '46.97495',
                 lon: '10.311144' }
         ];
+        const result = data.Get(content);
 
-        assert.deepEqual(data.Get(content), expected);
+        assert.deepEqual(result, expected);
     });
 });
