@@ -15,10 +15,4 @@ describe('calculate distance horizontal', () => {
         const result = hdistance.Get(pos1, pos2);
         assert(result > 0);
     });
-
-    it('should handle a 0 result', () => {
-        const pos1 = { lat: '46.974974', lon: '10.311162' };
-        const result = hdistance.Get(pos1, pos1);
-        assert.deepEqual(result === 0);
-    });
 });
