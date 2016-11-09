@@ -7,7 +7,7 @@ module.exports = {
         var horizontal = hdistance.Get(pos1, pos2);
         var vertical = vdistance.Get(pos1,pos2);
 
-        // w000t finally found out why I had math classed :)
+        // w000t finally found out why I had math classes :)
         // a2 + b2 = c2
         var a2 = Math.pow(horizontal,2);
         var b2 = Math.pow(vertical,2);
