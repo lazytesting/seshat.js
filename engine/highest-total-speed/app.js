@@ -5,21 +5,21 @@ const speed = require('../../core/calculate-speed');
 const maxvalue = require('../../core/lookup-maxvalue');
 const mapTwo = require('../../core/map-two');
 
-module.exports = {
-    Get: function(gpxContent) {
-        const points = convertGPX.Get(gpxContent);
-        const results = mapTwo.Get(points, getDifferences);
-
-        return maxvalue.Get(results, 'speed');
-    }
-};
-
 const getDifferences = function(previous, current) {
-    const time = timediff.Get(previous, current);
-    const distance = tdistance.Get(previous, current);
+    const time = timediff(previous, current);
+    const distance = tdistance(previous, current);
 
     return {
         date: current.date,
-        speed: speed.Get(distance, time)
+        speed: speed(distance, time)
     };
+}
+
+const get = function(gpxContent) {
+    const points = convertGPX(gpxContent);
+    const results = mapTwo(points, getDifferences);
+
+    return maxvalue(results, 'speed');
 };
+
+module.exports = get;

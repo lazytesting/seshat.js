@@ -1,12 +1,6 @@
-module.exports = {
-    Get : function Get(array, checkKey)
-    {
-        var result = Math.max.apply(Math,array.map(
-            function(o){
-                return o[checkKey];
-            })
-        );
-        return result;
-    }
-}
+const get = function(array, checkKey){
+    return Math.max.apply(Math, array.map(o => o[checkKey])
+    );
+};
 
+module.exports = get;

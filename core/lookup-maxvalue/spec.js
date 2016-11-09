@@ -13,7 +13,7 @@ describe('lookup max value in an array', () => {
                 field2: 10
             }];
 
-        const result = maxvalue.Get(array, 'field2');
+        const result = maxvalue(array, 'field2');
         assert(result, 20);
     });
 });

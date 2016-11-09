@@ -1,5 +1,5 @@
 const assert = require('assert');
-const data = require('./app.js');
+const gpxData = require('./app.js');
 const fs = require('fs');
 const path = require('path');
 
@@ -18,7 +18,7 @@ describe('Convert GPX data', () => {
                 lat: '46.97495',
                 lon: '10.311144' }
         ];
-        const result = data.Get(content);
+        const result = gpxData(content);
 
         assert.deepEqual(result, expected);
     });

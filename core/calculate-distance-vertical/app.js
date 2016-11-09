@@ -1,10 +1,5 @@
-module.exports = {
-    Get : function Get(pos1, pos2)
-    {
-        var ele1 = pos1.ele;
-        var ele2 = pos2.ele;
-        var distance = ele1 - ele2;
+const get = function(pos1, pos2) {
+    return pos1.ele - pos2.ele;
+};
 
-        return distance;
-    }
-}
+module.exports = get;

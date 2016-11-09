@@ -1,20 +1,17 @@
-const fs = require('fs');
 const xml2js = require('xml2js');
 
-module.exports = {
-    Get : function(gpxData)
-    {
-         var json = xml2JSON(gpxData);
-        return getDataPoints(json);
-    }
-}
+const get = function(gpxData) {
+    const json = xml2JSON(gpxData);
+
+    return getDataPoints(json);
+};
 
 var xml2JSON = function (xml){
     var parser = new xml2js.Parser();
     var json;
     parser.parseString(xml, function (err, result) {
-                json = result;
-            });
+        json = result;
+    });
     return json;
 }
 
@@ -30,3 +27,5 @@ var getDataPoints = function(json) {
     });
     return formated;
 }
+
+module.exports = get;
