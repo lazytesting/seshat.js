@@ -118,7 +118,7 @@
     "no-with": 2,
     "object-curly-spacing": [2, "always"], // autofix
     "object-property-newline": [2, { "allowMultiplePropertiesPerLine": true }],
-    "object-shorthand": [2, "consistent"], // autofix
+    "object-shorthand": 2, // autofix
     "one-var": [2, "never"],
     "one-var-declaration-per-line": 2,
     "operator-linebreak": [2, "none"],
