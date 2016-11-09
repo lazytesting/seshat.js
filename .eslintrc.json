@@ -34,7 +34,7 @@
     "dot-location": [2, "property"], // autofix
     "dot-notation": 2, // autofix
     "eol-last": 2, // autofix
-    "eqeqeq": [2, "always", {"null": "ignore"}],
+    "eqeqeq": 2,
     "func-call-spacing": 2, // autofix
     "func-style": 2,
     "guard-for-in": 2,
