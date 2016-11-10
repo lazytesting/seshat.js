@@ -1,6 +1,6 @@
 {
   "name": "convert-gpx-data",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "",
   "main": "app.js",
   "scripts": {
@@ -9,8 +9,7 @@
   "author": "Maarten Groeneweg",
   "license": "ISC",
   "dependencies": {
-    "togeojson": "^0.16.0",
-    "xml2js": "^0.4.17"
+    "gpx-parse": "^0.10.4"
   },
   "devDependencies": {
     "istanbul": "^0.4.5",

@@ -3,7 +3,7 @@ const gpxParse = require('gpx-parse');
 const get = function(gpxData) {
     let convertedPoints = [];
 
-    gpxParse.parseGpx(gpxData, (error, data)=>{
+    gpxParse.parseGpx(gpxData, (error, data) => {
         const points = data.tracks.map(track => track.segments.map(segment => segment));
         convertedPoints = points[0][0].map(point => ({
             date: point.time,
@@ -15,6 +15,5 @@ const get = function(gpxData) {
 
     return convertedPoints;
 };
-
 
 module.exports = get;

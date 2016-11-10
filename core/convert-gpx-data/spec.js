@@ -9,17 +9,16 @@ describe('Convert GPX data', () => {
         const content = fs.readFileSync(filePath, 'utf8');
 
         const expected = [
-            { date: '2015-01-11T14:10:11.000Z',
+            { date: new Date('2015-01-11T14:10:11.000Z'),
             ele: 2182,
             lat: 46.974974,
             lon: 10.311162 },
-            { date: '2015-01-11T14:10:12.000Z',
+            { date: new Date('2015-01-11T14:10:12.000Z'),
                 ele: 2185,
                 lat: 46.97495,
                 lon: 10.311144 }
         ];
         const result = gpxData(content);
-
         assert.deepEqual(result, expected);
     });
 });
