@@ -9,6 +9,7 @@
   "author": "Maarten Groeneweg",
   "license": "ISC",
   "dependencies": {
+    "togeojson": "^0.16.0",
     "xml2js": "^0.4.17"
   },
   "devDependencies": {
