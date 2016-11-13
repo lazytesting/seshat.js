@@ -1,6 +1,6 @@
 {
-  "name": "convert-gpx-data",
-  "version": "0.2.0",
+  "name": "flatten",
+  "version": "0.0.1",
   "description": "",
   "main": "app.js",
   "scripts": {
@@ -8,11 +8,8 @@
   },
   "author": "Maarten Groeneweg",
   "license": "ISC",
-  "dependencies": {
-    "gpx-parse": "^0.10.4"
-  },
   "devDependencies": {
     "istanbul": "^0.4.5",
-    "mocha": "^3.1.0"
+    "mocha": "^3.1.2"
   }
 }

@@ -1,6 +1,6 @@
 const convertGPX = require('../../core/convert-gpx-data');
 const totalDistance = require('../../core/calculate-distance-total');
-const mapTwo = require('../../core/map-two');
+const mapTwo = require('../../utils/map-two');
 
 // add total distance to array when we go down
 const downhillDistance = function(current, previous){
@@ -14,6 +14,11 @@ const downhillDistance = function(current, previous){
     return distance;
 };
 
+/**
+ * returns the total downhill distance of the track
+ * @param {string} gpxContent - gpx document
+ * @returns {number} distance - distance in meters
+ */
 const get = function(gpxContent) {
     const points = convertGPX(gpxContent);
     const distances = mapTwo(points, downhillDistance);
