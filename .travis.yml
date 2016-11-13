@@ -3,12 +3,7 @@ node_js:
   - "6"
   
 install:
-    - npm i mocha -g
-    - npm i recursive-install -g
-
-before_script:
-    - chmod +x ./recursive-install.sh
-    - "./recursive-install.sh"
+    - npm i
 
 script: 
     - "mocha **/*spec*.js"

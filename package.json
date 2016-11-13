@@ -1,0 +1,27 @@
+{
+  "name": "seshat-install-all",
+  "version": "0.0.1",
+  "description": "Tools for analyzing GPX data",
+  "main": "app.js",
+  "dependencies": {
+    "eslint": "^3.8.0"
+  },
+  "devDependencies": {
+    "glob": "^7.1.1",
+    "mocha": "^3.1.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "post-instal": "node ./install-all.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lazytesting/seshat.js.git"
+  },
+  "author": "Maarten groeneweg",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lazytesting/seshat.js/issues"
+  },
+  "homepage": "https://github.com/lazytesting/seshat.js#readme"
+}
