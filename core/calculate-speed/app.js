@@ -1,8 +1,8 @@
 /**
  * calculates the speed in km/h
- * @param {number} distance - distance in meters
- * @param {number} seconds - time in seconds
- * @returns {number} speed - kilometers per hour
+ * @param {Number} distance - distance in meters
+ * @param {Number} seconds - time in seconds
+ * @returns {Number} speed - kilometers per hour
  */
 const get = function(distance, seconds) {
     const metersPerSecond = distance / seconds;

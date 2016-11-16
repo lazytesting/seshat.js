@@ -3,17 +3,17 @@ const flatten = require('../../utils/flatten')
 
 /**
  * object which contains positional and time info
- * @typedef {Object} trackPoint - trackpoint object
- * @property {date} trackPoint.date - datetime of recording
- * @property {number} trackPoint.ele - elevation in meters
- * @property {number} trackPoint.lat - latitude
- * @property {number} trackPoint.lon - longitude
+ * @typedef {Object} TrackPoint - trackpoint object
+ * @property {date} TrackPoint.date - datetime of recording
+ * @property {number} TrackPoint.ele - elevation in meters
+ * @property {number} TrackPoint.lat - latitude
+ * @property {number} TrackPoint.lon - longitude
  */
 
- /*
+ /**
  * converts GPX data to an array of position objects
- * @param {string} gpxData - GPX document
- * @returns [{trackPoint}] trackPoints - list of trackPoint objects
+ * @param {String} gpxData - GPX document
+ * @returns {TrackPoint[]} - list of trackPoint objects
  */
 const get = function(gpxData) {
     let convertedPoints = [];

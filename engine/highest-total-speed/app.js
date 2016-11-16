@@ -17,8 +17,8 @@ const getDifferences = function(previous, current) {
 
 /**
  * returns the highest total (diagonal) speed
- * @param {string} gpxContent - gpx document
- * @returns {number} speed - highest speed
+ * @param {String} gpxContent - gpx document
+ * @returns {Number} speed - highest speed
  */
 const get = function(gpxContent) {
     const points = convertGPX(gpxContent);
