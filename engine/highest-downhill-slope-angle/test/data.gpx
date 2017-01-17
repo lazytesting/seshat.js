@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<gpx creator="Ski Tracks - Android (60)" version="1.1"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.topografix.com/GPX/1/1" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+<metadata>
+<link href="http://www.corecoders.com">
+<text>Core Coders Ltd</text>
+</link>
+<time>2016-07-26T13:08:10.518+02:00</time>
+<bounds maxlat="47.012382" maxlon="10.319155" minlat="46.974897" minlon="10.293443" />
+</metadata>
+<trk>
+<name>Miraski 2015, dag 2.5</name>
+<trkseg>
+<trkpt lat="46.974974" lon="10.311162">
+<ele>2182.0</ele>
+<time>2015-01-11T15:10:11.000+01:00</time></trkpt>
+<trkpt lat="46.97495" lon="10.311144">
+<ele>2185.0</ele>
+<time>2015-01-11T15:10:12.000+01:00</time></trkpt>
+<trkpt lat="46.974933" lon="10.311104">
+<ele>2191.0</ele>
+<time>2015-01-11T15:10:13.000+01:00</time></trkpt>
+<trkpt lat="46.974964" lon="10.311114">
+<ele>2184.0</ele>
+<time>2015-01-11T15:10:14.000+01:00</time></trkpt>
+<trkpt lat="46.974897" lon="10.311251">
+<ele>2191.0</ele>
+<time>2015-01-11T15:10:18.000+01:00</time></trkpt>
+<trkpt lat="46.975012" lon="10.311166">
+<ele>2189.0</ele>
+<time>2015-01-11T15:10:23.000+01:00</time></trkpt>
+<trkpt lat="46.97509" lon="10.311252">
+<ele>2179.0</ele>
+<time>2015-01-11T15:15:12.000+01:00</time></trkpt>
+<trkpt lat="46.975167" lon="10.311327">
+<ele>2175.0</ele>
+<time>2015-01-11T15:15:14.000+01:00</time></trkpt>
+<trkpt lat="46.975229" lon="10.311425">
+<ele>2182.0</ele>
+<time>2015-01-11T15:15:16.000+01:00</time></trkpt>
+<trkpt lat="46.975326" lon="10.311533">
+<ele>2185.0</ele>
+<time>2015-01-11T15:15:19.000+01:00</time></trkpt>
+<trkpt lat="46.975419" lon="10.311633">
+<ele>2188.0</ele>
+<time>2015-01-11T15:15:22.000+01:00</time></trkpt>
+<trkpt lat="46.975496" lon="10.311722">
+<ele>2191.0</ele>
+<time>2015-01-11T15:15:25.000+01:00</time></trkpt>
+<trkpt lat="46.975569" lon="10.31181">
+<ele>2195.0</ele>
+<time>2015-01-11T15:15:28.000+01:00</time></trkpt>
+</trkseg>
+</trk>
+</gpx>
