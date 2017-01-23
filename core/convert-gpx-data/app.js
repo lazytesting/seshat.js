@@ -1,3 +1,5 @@
+'use strict';
+
 const gpxParse = require('gpx-parse');
 const flatten = require('../../utils/flatten')
 

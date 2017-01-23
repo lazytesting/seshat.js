@@ -34,7 +34,7 @@ const get = function(gpxContent, seconds) {
     const distances = points.reduce(createReduce(seconds), [[]]);
     const angles = distances.map(ele => calculateAngle(ele[0], ele[ele.length - 1]) * -1);
 
-    return Math.max(...angles);
+    return angles.reduce((carry, item) => Math.max(carry, item), angles.shift());
 };
 
 module.exports = get;

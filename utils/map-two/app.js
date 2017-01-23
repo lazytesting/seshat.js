@@ -1,3 +1,5 @@
+'use strict';
+
 /**
  * @callback TwoValueCallback
  * @param {*} previous
