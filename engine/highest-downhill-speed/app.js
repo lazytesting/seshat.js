@@ -29,14 +29,14 @@ const createReduce = seconds => (carry, item) => {
  * returns the total downhill distance of the track
  * @param {String} gpxContent - gpx document
  * @param {Number} seconds - timeframe to calculate average
- * @returns {Number} anlge - maximum slope angle
+ * @returns {Number} speed - maximum speed in km/h
  */
 const get = function(gpxContent, seconds) {
     const points = convertGPX(gpxContent);
     const distances = points.reduce(createReduce(seconds), [[]]);
-    const angles = distances.map(ele => speed(tdistance(ele[0], ele[ele.length - 1]), timeDiff(ele[0], ele[ele.length - 1])));
+    const speeds = distances.map(ele => speed(tdistance(ele[0], ele[ele.length - 1]), timeDiff(ele[0], ele[ele.length - 1])));
 
-    return angles.reduce((carry, item) => Math.max(carry, item), angles.shift());
+    return speeds.reduce((carry, item) => Math.max(carry, item), speeds.shift());
 };
 
 module.exports = get;

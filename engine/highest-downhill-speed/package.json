@@ -1,6 +1,6 @@
 {
-  "name": "highest-total-speed",
-  "version": "0.1.0",
+  "name": "highest-downhill-speed",
+  "version": "0.2.0",
   "description": "",
   "main": "app.js",
   "scripts": {

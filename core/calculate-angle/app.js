@@ -9,8 +9,6 @@ const get = function Get(pos1, pos2) {
     return calculateAngle(vertical, horizontal);
 };
 
-
-// TODO check axis
 const calculateAngle = function(x, y)
 {
     const tan = Math.atan2(x, y);
