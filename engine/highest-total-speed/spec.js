@@ -7,7 +7,8 @@ describe('Read and parse data from disk', () => {
     it('should return results', () => {
         const filePath = path.join(__dirname, '/test/data.gpx');
         const gpx = fs.readFileSync(filePath, 'utf8');
-        const result = speed(gpx);
-        assert.notEqual(result, null);
+        const result = speed(gpx, 5);
+
+        assert.ok(result > 0);
     });
 });
