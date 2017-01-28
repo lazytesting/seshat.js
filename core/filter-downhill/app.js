@@ -22,7 +22,7 @@ const mapTwo = require('../../utils/map-two');
  * @returns {number} result - sum of results
  */
 const get = function(trackPoints, callback) {
-    const downHillFilter = (pos1, pos2) => pos1.ele >= pos2.ele ? callback(pos1, pos2) : 0;
+    const downHillFilter = (pos1, pos2) => pos1.ele > pos2.ele ? callback(pos1, pos2) : 0;
     const downhillItems = mapTwo(trackPoints, downHillFilter);
 
     return downhillItems.reduce((prev, cur) => prev + cur);
