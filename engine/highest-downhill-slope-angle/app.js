@@ -10,15 +10,14 @@ const createReduce = horizontalDistance => (carry, item, blabla, array) => {
 
     if (thing2 >= horizontalDistance) {
         // clone last array minus first item of that array into new array
-        const lastArray = JSON.parse(JSON.stringify(carry[index]));
+        const lastArray = carry[index].slice(1);
 
         // remove all but the first item (save mem)
         carry[index] = carry[index].splice(0, 1);
+
         // push last item
         carry[index].push(item);
-
         lastArray.push(item);
-        lastArray.shift();
 
         carry.push(lastArray);
     } else {
