@@ -10,7 +10,13 @@ const createReduce = horizontalDistance => (carry, item, blabla, array) => {
 
     if (thing2 >= horizontalDistance) {
         // clone last array minus first item of that array into new array
-        const lastArray = carry[index].slice(1);
+        let lastArray = [];
+        for (let i = 0; i < carry[index].length; i++) {
+            if (carry[index][i] >= (carry[index][i - 1] + horizontalDistance)) {
+                lastArray = carry[index].slice(i - 1);
+                break;
+            }
+        }
 
         // remove all but the first item (save mem)
         carry[index] = carry[index].splice(0, 1);
@@ -36,7 +42,7 @@ const createReduce = horizontalDistance => (carry, item, blabla, array) => {
 const get = function(gpxContent, horizontalDistance) {
     const points = convertGPX(gpxContent);
     const distances = points.reduce(createReduce(horizontalDistance), [[]]);
-    const angles = distances.map(ele => calculateAngle(ele[0], ele[ele.length - 1]) * -1);
+    const angles = distances.map(ele => calculateAngle(ele[0], ele[ele.length - 1]));
 
     return angles.reduce((carry, item) => Math.max(carry, item), angles.shift());
 };
