@@ -7,7 +7,7 @@ describe('Read and parse data from disk', () => {
     it('should return results', () => {
         const filePath = path.join(__dirname, '/test/data.gpx');
         const gpx = fs.readFileSync(filePath, 'utf8');
-        const result = angle(gpx, 30);
+        const result = angle(gpx, 5);
 
         assert.ok(result > 0);
     });
