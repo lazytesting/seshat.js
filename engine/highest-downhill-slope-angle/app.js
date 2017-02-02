@@ -1,3 +1,5 @@
+'use strict';
+
 const convertGPX = require('../../core/convert-gpx-data');
 const calculateAngle = require('../../core/calculate-angle');
 
